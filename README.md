@@ -11,6 +11,12 @@ Tested on Python 3.8.6
 Note: Numpy might throw a RuntimeError on Windows 10 [due to a bug](https://developercommunity.visualstudio.com/content/problem/1207405/fmod-after-an-update-to-windows-2004-is-causing-a.html#:~:text=My%20current%20expectation%20is%20that%20this%20will%20be%20able%20to%20be%20released%20near%20the%20end%20of%20January%202021.), so you'll need version 1.19.3 of numpy as of 10th December 2020. Expected fix is late January 2021.
 
 ## Code heavily inspired/copied from videos and online code-snippets:
+- [3Blue1Brown - But what is the Fourier Transform? A visual introduction.](https://www.youtube.com/watch?v=spUNpyF58BY&ab_channel=3Blue1Brown)
 - [FluidicColours - NumPy Tutorials : 011 : Fast Fourier Transforms - FFT and IFFT](https://www.youtube.com/watch?v=su9YSmwZmPg&t=511s&ab_channel=FluidicColours)
 - [python-sounddevice documentation - Examples](https://python-sounddevice.readthedocs.io/en/0.3.14/examples.html#plot-microphone-signal-s-in-real-time)
 - [SimonXu - Discrete Fourier Transform - Simple Step by Step](https://www.youtube.com/watch?v=mkGsMWi_j4Q&t=508s&ab_channel=SimonXu)
+
+## File explanation:
+**SpectrumAnalyser:** 3Blue1Brown-inspired logical attempt at implementing a fourier transformation of microphone input signal.
+**SpectrumAnalyser-one_channel:** Same thing, but with on channel commented out
+**SpectrumAnalyser-one_channel - FFT:** Fast Fourier Transform algorithm implementation through numpy *(most effective and best working so far)* 
